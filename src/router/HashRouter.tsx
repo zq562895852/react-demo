@@ -14,7 +14,7 @@ export default class extends React.Component<Props, State> {
     super(props);
     this.state = {
       location: {
-        pathname: ""
+        pathname: window.location.hash.slice(1) //这个要设置，否则刷新组件会丢失
       }
     };
   }
